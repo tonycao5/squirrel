@@ -48,21 +48,21 @@ def edit(request, unique_squirrel_id):
 
 
 def stats(request):
-    shiftstats=Squirrel.objects.values("shift").annotate(count=Count("shift")).order_by()
-    agestats=Squirrel.objects.values("age").annotate(count=Count("age")).order_by()
-    primary_fur_colorstats=Squirrel.objects.values("primary_fur_color").annotate(count=Count("primary_fur_color")).order_by()
-    Runningstats=Squirrel.objects.values("running").annotate(count=Count("running")).order_by()
-    Eatingstats=Squirrel.objects.values("eating").annotate(count=Count("eating")).order_by()
-    Moansstats=Squirrel.objects.values("moans").annotate(count=Count("moans")).order_by()
-    context={
-        "shiftstats":shiftstats,
-        "agestats":agestats,
-        "primary_fur_colorstats":primary_fur_colorstats,
-        "Runningstats":Runningstats,
-        "Eatingstats":Eatingstats,
-        "Moansstats":Moansstats,
+    shiftstats = Squirrel.objects.values("shift").annotate(count = Count("shift")).order_by()
+    agestats = Squirrel.objects.values("age").annotate(count = Count("age")).order_by()
+    primary_fur_colorstats = Squirrel.objects.values("primary_fur_color").annotate(count = Count("primary_fur_color")).order_by()
+    Runningstats = Squirrel.objects.values("running").annotate(count = Count("running")).order_by()
+    Eatingstats = Squirrel.objects.values("eating").annotate(count = Count("eating")).order_by()
+    Moansstats = Squirrel.objects.values("moans").annotate(count = Count("moans")).order_by()
+    context = {
+        "shiftstats": shiftstats,
+        "agestats": agestats,
+        "primary_fur_colorstats": primary_fur_colorstats,
+        "Runningstats": Runningstats,
+        "Eatingstats": Eatingstats,
+        "Moansstats": Moansstats,
     }
 
-    return render(request,'sightings/stats.html',context)
+    return render(request, 'sightings/stats.html', context)
 
 
