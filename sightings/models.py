@@ -1,508 +1,160 @@
 from django.db import models
 from django.urls import reverse
-# Create your models here.
 
 class Squirrel(models.Model):
-
     x = models.DecimalField(
-
-            max_digits=2000,
-
-            decimal_places=20,
-
-            default=None,
-
-            blank=True,
-
-            help_text=_('Latitude'),
-
-            null=True,
-
+            max_digits = 20,
+            decimal_places = 14,
+            null = True,
             )
-
-
-
     y = models.DecimalField(
-
-            max_digits=2000,
-
-            decimal_places=20,
-
-            default=None,
-
-            blank=True,
-
-            help_text=_('Longitude'),
-
-            null=True,
-
+            max_digits = 20,
+            decimal_places = 14,
+            null = True,
             )
-
-
-
     unique_squirrel_id = models.CharField(
-
-            max_length=20,
-
-            default=None,
-
+            max_length = 24,
             primary_key=True,
-
-            blank=True,
-
             )
-
-
-
     hectare = models.CharField(
-
-            max_length=10,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 16,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     shift = models.CharField(
-
-            max_length=10,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 16,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     date = models.CharField(
-
-            max_length=20,
-
-            default=0,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 20,
+            default = 0,
+            blank = True,
+            null = True,
             )
-
-
-
     hectare_squirrel_number = models.IntegerField(
-
-            default=0,
-
-            blank=True,
-
-            null=True,
-
+            default = 0,
+            blank = True,
+            null = True,
             )
-
-
-
     age = models.CharField(
-
-            max_length=8,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 16,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     primary_fur_color = models.CharField(
-
-            max_length=8,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 16,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     highlight_fur_color = models.CharField(
-
-            max_length=8,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 16,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     combination_of_primary_and_highlight_color = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 256,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     color_notes = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 256,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     location = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 256,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     above_ground_sighter_measurement = models.CharField(
-
-            max_length=10,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
+            max_length = 256,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     specific_location = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('specific location of squirrel'),
-
+            max_length = 256,
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     running = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel is running'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     chasing = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel is chasing'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     climbing = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel is climbing'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     eating = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel is eating'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     foraging = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel is foraging'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     other_activities = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            null=True,
-
-            blank=True,
-
+            max_length = 256,
+            default = None,
+            null = True,
+            blank = True,
             )
-
-
-
     kuks = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel kuks'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     quaas = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel quaas'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     moans = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text=_('whether the squirrel moans'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     tail_flags = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text = _('whether the squirrel has tail flags'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     tail_twitches = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text = _('whether the squirrel has tail twitches'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     approaches = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text = _('whether the squirrel approaches'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     indifferent = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text = _('whether the squirrel is indifferent'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
     runs_from = models.BooleanField(
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            help_text = _('whether the squirrel runs from'),
-
+            default = None,
+            blank = True,
+            null = True,
             )
-
-
-
-    other_interactions = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            )
-
-
-
-    lat_long = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            )
-
-
-
-    zip_codes = models.CharField(
-
-            max_length=100,
-
-            default=None,
-
-            blank=True,
-
-            null=True,
-
-            )
-
-
-
-    community_districts = models.IntegerField(
-
-            default=0,
-
-            blank=True,
-
-            null=True,
-
-            )
-
-
-
-    borough_boundaries = models.IntegerField(
-
-            default=0,
-
-            blank=True,
-
-            null=True,
-
-            )
-
-
-
-    city_coucil_districts = models.IntegerField(
-
-            default=0,
-
-            blank=True,
-
-            null=True,
-
-            )
-
-
-
-    police_precincts = models.IntegerField(
-
-            default=0,
-
-            blank=True,
-
-            null=True,
-
-            )
-
