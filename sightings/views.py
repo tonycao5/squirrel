@@ -5,12 +5,12 @@ from sightings.models import Squirrel
 from sightings.forms import SquirrelForm
 from django.db.models import Count
 
-def all(request):
+def main(request):
     squirrels = Squirrel.objects.all()
     context = {            
             's': squirrels, 
             }
-    return render(request, 'sightings/all.html', context)
+    return render(request, 'sightings/main.html', context)
 
 def add(request):
     if request.method == 'POST':
