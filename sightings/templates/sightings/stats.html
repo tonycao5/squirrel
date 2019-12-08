@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<h2>
+	The statistics of sighting in Central Park
+</h2>
+
+<h3>
+	The attributions of squarrels and their movements
+<h3/>
+
+<table class="table" >
+	<h3>The shift time of squirrels (AM or PM)</h3>
+	<tr>	
+		{% for foo in shiftstats %}
+		<th>{{ foo.shift }}</th>
+		<td>{{ foo.count }}</td>
+		{% endfor %}
+	</tr>
+</table>
+
+<table class="table" >
+        <h3>The ages of squirrels (Juvenile or Adult)</h3>
+	<tr>
+                {% for foo in agestats %}
+		{% if foo.age %}
+		<th>{{ foo.age }}</th>
+		<td>{{ foo.count }}</td>	
+		{% endif %}
+		{% endfor %}
+	</tr>
+</table>
+
+<table class="table" >
+        <h3>The primary fur color of squirrel (Cinnamon or Grey or Black)</h3>
+        <tr>
+	          {% for foo in primary_fur_colorstats %}
+      		  <th>{{ foo.primary_fur_color }}</th>
+      		  <td>{{ foo.count }}</td>
+      		  {% endfor %}
+        </tr>
+</table>
+
+<table class="table" >
+        <h3>If the squirrel runs to you? (True or False)</h3>
+        <tr>
+	{% for foo in Runningstats %}
+        <th>{{ foo.running }}</th>
+        <td>{{ foo.count }}</td>
+        {% endfor %}
+        </tr>
+</table>
+
+<table class="table" >
+        <h3>If the squirrel eats? (True or False)</h3>
+        <tr>
+        {% for foo in Eatingstats %}
+        <th>{{ foo.eating }}</th>
+        <td>{{ foo.count }}</td>
+        {% endfor %}
+        </tr>
+</table>
+
+<table class="table" >
+        <h3>If the squirrel moans? (True or False)</h3>
+        <tr>
+        {% for foo in Moansstats %}
+        <th>{{ foo.moans }}</th>
+        <td>{{ foo.count }}</td>
+        {% endfor %}
+        </tr>
+</table>
