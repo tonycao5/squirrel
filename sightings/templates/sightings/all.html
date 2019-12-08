@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<body>
-	<li><a href="/sightings/add/">Did you see a squirrel?</a></li>
+	<li><a href = "/sightings/add/">Did you see a squirrel?</a></li>
         {% for item in s %}
-            <li><a href="/sightings/{{item.unique_squirrel_id}}/">{{item.unique_squirrel_id}}</a></li>
+            <li><a href = "/sightings/{{item.unique_squirrel_id}}/">{{item.unique_squirrel_id}}</a></li>
         {% endfor %}
 	<body>
 </html>
