@@ -15,17 +15,17 @@ Han Wang (hw2752)
 
 **The web suffix for each function (feature) are:**
 
-admin/
+- admin/
 
-sightings/add/
+- sightings/add/
 
-map/
+- map/
 
-sightings/
+- sightings/
 
-sightings/<unique_squirrel_id>/
+- sightings/<unique_squirrel_id>/
 
-sightings/stats
+- sightings/stats
 
 ## Background
 
