@@ -90,16 +90,6 @@ The features we successfully achieve are the following:
     Runs from
 - A view with general stats about the sightings
 
-[Deployed URLs](https://zc2500toolsforanalytics.appspot.com/)
-
-The web suffix for each function (feature) are:
-[admin/](https://zc2500toolsforanalytics.appspot.com/admin/),
-[sightings/add/](https://zc2500toolsforanalytics.appspot.com/sightings/add/),
-[map/](https://zc2500toolsforanalytics.appspot.com/map/),
-[sightings/](https://zc2500toolsforanalytics.appspot.com/sightings/),
-[sightings/<unique_squirrel_id>/](https://zc2500toolsforanalytics.appspot.com/sightings/<unique_squirrel_id>/),
-[sightings/stats](https://zc2500toolsforanalytics.appspot.com/sightings/stats).
-
 ## Maintainers:
 
 [@Zhicheng Cao](https://github.com/tonycao5)
