@@ -1,5 +1,18 @@
 # Squirrel-Tracking Application ![](https://img.shields.io/badge/License-Mozilla%20v2.0-blue) ![](https://img.shields.io/badge/Environment-Django-yellowgreen)  ![](https://img.shields.io/badge/Build-passing-red)
 
+# Group Name and Section
+
+Tools for Analytics (SEC2)
+
+Project Group 45
+
+Zhicheng Cao (zc2500);
+Han Wang (hw2752)
+
+UNIs: [zc2500, hw2752]
+
+Deployed URLs: https://zc2500toolsforanalytics.appspot.com/
+
 # Background
 
 This is the FINAL PROJECT of Tools for Analytics. (Dec. 8th, 2019)
