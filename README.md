@@ -30,6 +30,7 @@ sightings/stats
 ## Background
 
 This is the FINAL PROJECT of Tools for Analytics. 
+-----------------------------------------------------------------------------------------
 
 This is a real story...
 
