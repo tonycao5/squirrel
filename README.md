@@ -42,7 +42,9 @@ He would like to start keeping track of all the known squirrels and plans to sta
 
 This project uses Django and Python. Go check them out if you don't have them locally installed or VM installed if you want to make more modify on this project.
 
-'$ sudo apt-get install python-pip'
+```sh
+$ sudo apt-get install python-pip
+```
 
 ## Usage
 
@@ -106,8 +108,10 @@ sightings/<unique_squirrel_id>/
 sightings/stats
 
 ## Maintainers:
-@tonycao5
-@hw2752
+
+[@Zhicheng Cao](https://github.com/tonycao5)
+
+[@Han Wang](https://github.com/hw2752)
 
 ## License:
 Mozilla Public License, v. 2.0.
