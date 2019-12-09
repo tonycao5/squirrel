@@ -51,7 +51,7 @@ We have deployed on Google Cloud and you can acknown and use this project by ent
 
 ## Features
 
-The features we successfully achieve are the following:
+###The features we successfully achieve are the following:
 
 Import: A command that can be used to import the data from the 2018 census file (in CSV format). The file path should be specified at the command line after the name of the management command. 
 
