@@ -8,7 +8,7 @@ from django.db.models import Count
 def main(request):
     squirrels = Squirrel.objects.all()
     context = {            
-            's': squirrels, 
+            'squ': squirrels, 
             }
     return render(request, 'sightings/main.html', context)
 
@@ -28,7 +28,7 @@ def add(request):
 def map(request):
     squirrels = Squirrel.objects.all()
     context = {
-            's': squirrels,
+            'squ': squirrels,
             }
     return render(request, 'sightings/map.html', context)
 
