@@ -1,0 +1,15 @@
+*.log
+
+local_settings.py
+
+*/__pycache__/*
+
+sightings/management/commands/__pycache__/*
+
+sightings/migrations/__pycache__/*
+
+project/__pycache__/*
+
+sightings/__pycache__/*
+
+*/collected-static/*
