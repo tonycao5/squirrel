@@ -90,7 +90,7 @@ The features we successfully achieve are the following:
     Runs from
 - A view with general stats about the sightings
 
-## Maintainers:
+## Maintainers
 
 [@Zhicheng Cao](https://github.com/tonycao5)
 
