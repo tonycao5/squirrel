@@ -114,4 +114,4 @@ sightings/stats
 [@Han Wang](https://github.com/hw2752)
 
 ## License:
-Mozilla Public License, v. 2.0.
+[Mozilla](LICENSE)© v.2.0.
