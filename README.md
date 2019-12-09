@@ -15,17 +15,17 @@ Han Wang (hw2752)
 
 **The web suffix for each function (feature) are:**
 
-- admin/
+- [admin/](https://zc2500toolsforanalytics.appspot.com/admin/)
 
-- sightings/add/
+- [sightings/add/](https://zc2500toolsforanalytics.appspot.com/sightings/add/)
 
-- map/
+- [map/](https://zc2500toolsforanalytics.appspot.com/map/)
 
-- sightings/
+- [sightings/](https://zc2500toolsforanalytics.appspot.com/sightings/)
 
-- sightings/<unique_squirrel_id>/
+- [sightings/<unique_squirrel_id>/](https://zc2500toolsforanalytics.appspot.com/sightings/<unique_squirrel_id>/)
 
-- sightings/stats
+- [sightings/stats](https://zc2500toolsforanalytics.appspot.com/sightings/stats)
 
 ## Background
 
@@ -90,21 +90,15 @@ The features we successfully achieve are the following:
     Runs from
 - A view with general stats about the sightings
 
-Deployed URLs: https://zc2500toolsforanalytics.appspot.com/
+[Deployed URLs](https://zc2500toolsforanalytics.appspot.com/)
 
 The web suffix for each function (feature) are:
-
-admin/
-
-sightings/add/
-
-map/
-
-sightings/
-
-sightings/<unique_squirrel_id>/
-
-sightings/stats
+[admin/](https://zc2500toolsforanalytics.appspot.com/admin/),
+[sightings/add/](https://zc2500toolsforanalytics.appspot.com/sightings/add/),
+[map/](https://zc2500toolsforanalytics.appspot.com/map/),
+[sightings/](https://zc2500toolsforanalytics.appspot.com/sightings/),
+[sightings/<unique_squirrel_id>/](https://zc2500toolsforanalytics.appspot.com/sightings/<unique_squirrel_id>/),
+[sightings/stats](https://zc2500toolsforanalytics.appspot.com/sightings/stats).
 
 ## Maintainers:
 
